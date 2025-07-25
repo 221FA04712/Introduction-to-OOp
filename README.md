@@ -259,3 +259,70 @@ A class in Java is the foundation for object-oriented programming. It enables **
 
 ---
 
+
+
+
+
+# Object in Java
+
+In Java, an **object** is a real-world entity created from a class. It acts as an actual thing based on a design or blueprint (which is the class).
+
+Think of a **class** as a **blueprint**, and an **object** as the **real thing** made from that blueprint.
+
+---
+
+##  Characteristics of an Object
+
+Each object has:
+
+- **State**  
+  The data or information the object holds.  
+  _Example_: A car's color, model, speed.
+
+- **Behavior**  
+  The actions the object can perform.  
+  _Example_: A car can start, stop, or accelerate.
+
+- **Identity**  
+  This distinguishes one object from another, even if they have the same data.  
+  _Example_: Two cars may be of the same model but are different vehicles.
+
+---
+
+##  Key Points:
+
+- An object is an **instance** of a class.
+- It stores **real values** and performs actions.
+- Multiple objects can be created from the same class.
+- Each object can have different states (values).
+
+---
+
+##  Simple Java Example
+
+```java
+class Car {
+    String color;
+    int speed;
+
+    void start() {
+        System.out.println("Car has started.");
+    }
+
+    void stop() {
+        System.out.println("Car has stopped.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();      // Object created
+        myCar.color = "Red";
+        myCar.speed = 100;
+        myCar.start();              // Behavior
+        System.out.println("Color: " + myCar.color); // State
+    }
+}
+
+
+
